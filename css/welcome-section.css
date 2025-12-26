@@ -1,0 +1,182 @@
+.welcome {
+  position: relative;
+}
+
+.welcome-content {
+  display: flex;
+  height: 900px;
+  overflow: hidden;
+}
+
+.welcome-content video {
+  z-index: 1;
+  width: 50vw;
+  object-fit: cover;  
+  object-position: bottom;
+}
+
+.welcome-posters {
+  width: 50vw;
+  padding-top: 100px;
+  display: flex;
+  gap: 35px;
+  z-index: 0;
+  transform: rotate(-8.31deg);
+  animation: posters-move 12s linear infinite;
+}
+
+.welcome-posters img {
+  width: 355px;
+  height: 475px;
+  object-fit: contain;
+  border-radius: 13px;
+  transition: transform 0.5s ease;
+}
+
+.welcome-posters img:hover {
+  transform: scale(1.1);
+}
+
+.welcome-posters:hover {
+  animation-play-state: paused;
+}
+
+.ribbot-wrapper {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  bottom: 180px;
+  top: 565px;
+
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden; 
+
+}
+.welcome-ribbot {
+  animation: running-ribbot 10s linear infinite;
+}
+
+/* .welcome-ribbot {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  bottom: 180px;
+  animation: running-ribbot 10s linear infinite;
+} */
+
+@keyframes posters-move {
+  0% {
+    transform: rotate(-8.31deg) translateX(0%);
+  }
+  100% {
+    transform: rotate(-8.31deg) translateX(-270.3%);
+  }
+}
+
+@keyframes running-ribbot {
+  0% {
+    transform: rotate(-8.31deg) translateX(-10%);
+  }
+  100% {
+    transform: rotate(-8.31deg) translateX(-43.35%);
+  }
+}
+
+
+@media (max-width:1400px) {
+  .welcome-content video {
+    height: 750px;
+  }
+
+  .welcome-posters img {
+    width: 305px;
+    height: 425px;
+  }
+
+  .ribbot-wrapper {
+    top: 395px;
+  }
+}
+
+@media (max-width:1120px) {
+  .welcome-content video {
+    height: 600px;
+  }
+
+  .welcome-posters img {
+    width: 255px;
+    height: 375px;
+  }
+
+  .ribbot-wrapper {
+    top: 275px;
+  }
+}
+
+@media (max-width:850px) {
+  .welcome-content video {
+    height: 550px;
+  }
+
+  .welcome-posters img {
+    width: 225px;
+    height: 345px;
+  }
+
+  .ribbot-wrapper {
+    top: 205px;
+  }
+}
+
+@media (max-width:740px) {
+  .welcome-content video {
+    height: 500px;
+  }
+
+  .welcome-posters {
+    padding-top: 60px;
+  }
+
+  .ribbot-wrapper {
+    top: 340px;
+  }
+
+  .ribbot-wrapper img {
+    height: 80px;
+  }
+}
+
+@media (max-width:520px) {
+  .welcome-content video {
+    height: 400px;
+    width: 100vw;
+  }
+
+  .welcome-posters {
+    padding-top: 20px;
+    margin-top: -120px;
+    z-index: 6;
+      gap: 15px;
+  }
+
+  .welcome-posters img {
+    width: 185px;
+    height: 305px;
+    border-radius: 7px ;
+  }
+
+  .ribbot-wrapper {
+    top: 415px;
+    z-index: 8;
+  }
+
+  .ribbot-wrapper img {
+    height: 80px;
+  }
+
+  .welcome-content {
+
+    flex-direction: column;
+  }
+}

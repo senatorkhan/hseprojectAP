@@ -1,0 +1,413 @@
+
+.pillow-wrapper {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 0px;
+  height: 720px;
+  position: relative;
+}
+
+.pillows {
+  position: relative;
+}
+
+.pillows h3 {
+  float: right;
+}
+
+.pillow-1:hover,
+.pillow-2:hover,
+.pillow-3:hover,
+.pillow-4:hover,
+.pillow-5:hover {
+  animation: slowRotate 2s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@keyframes slowRotate {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.pillow-1 {
+  position: absolute;
+  top: -20px;
+  left: -100px;
+}
+
+.pillow-2 {
+  position: absolute;
+  top: 110px;
+  left: 170px;
+}
+
+.pillow-3 {
+  position: absolute;
+  top: -60px;
+  left: 410px;
+}
+
+.pillow-4 {
+  position: absolute;
+  top: 220px;
+  left: 540px;
+}
+
+.pillow-5 {
+  position: absolute;
+  top: 60px;
+  left: 810px;
+}
+
+.films {
+  pointer-events: none;
+  z-index: 2;
+  width: 212px;
+  height: 285px;
+  object-fit: cover;
+  border-radius: 8px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
+
+.pillows-img {
+  display: flex;
+  gap: 8px;
+  align-items: center;  
+  justify-content: center;
+  justify-items: center;
+
+  padding-left: 320px;
+}
+
+.pillow-1:hover + .film-1,
+.pillow-2:hover + .film-2,
+.pillow-3:hover + .film-3,
+.pillow-4:hover + .film-4,
+.pillow-5:hover + .film-5 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.film-1:hover,
+.film-2:hover,
+.film-3:hover,
+.film-4:hover,
+.film-5:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+@media (max-width: 1400px) {
+  .pillow-wrapper {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0px;
+    height: 720px;
+    position: relative;
+  }
+  
+  .pillow-1 {
+    top: -20px;
+    left: 80px;
+    width: 330px;
+  }
+
+  .pillow-2 {
+    top: 160px;
+    left: 100px;
+    width: 500px;
+  }
+
+  .pillow-3 {
+    top: 0px;
+    left: 400px;
+  }
+
+  .pillow-4 {
+    top: 300px;
+    left: 550px;
+    width: 320px;
+  }
+
+  .pillow-5 {
+    top: 80px;
+    left: 770px;
+    width: 340px;
+  }
+
+  .films {
+    width: 182px;
+    height: 255px;
+  }
+
+  .pillows-img {
+    gap: 6px;
+    padding-left: 0px;
+  }
+}
+
+
+@media (max-width: 1120px) {
+  .pillow-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+
+  }
+  
+  .pillow-1 {
+    top: -20px;
+    left: 0px;
+    width: 280px;
+  }
+
+  .pillow-2 {
+    top: 160px;
+    left: 30px;
+    width: 400px;
+  }
+
+  .pillow-3 {
+    top: 0px;
+    left: 240px;
+  }
+
+  .pillow-4 {
+    top: 100px;
+    left: 600px;
+    width: 220px;
+  }
+
+  .pillow-5 {
+    top: 250px;
+    left: 370px;
+    width: 360px;
+  }
+
+  .films {
+    width: 112px;
+    height: 185px;
+  }
+
+  .pillows-img {
+    gap: 6px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 850px) {
+  .pillow-wrapper {
+    max-width: 720px;
+  }
+
+  .pillows h3 {
+    float: none;
+    text-align: center;
+    font-size: 36px;
+
+  }
+  
+  .pillow-1 {
+    top: 50px;
+    left: 0px;
+    width: 210px;
+  }
+
+  .pillow-2 {
+    top: 180px;
+    left: 30px;
+    width: 370px;
+  }
+
+  .pillow-3 {
+    top: 20px;
+    left: 200px;
+    width: 350px;
+  }
+
+  .pillow-4 {
+    top: 120px;
+    left: 520px;
+    width: 190px;
+  }
+
+  .pillow-5 {
+    top: 270px;
+    left: 350px;
+    width: 290px;
+  }
+
+  .films {
+    width: 92px;
+    height: 165px;
+  }
+
+  .pillows-img {
+    gap: 4px;
+    padding-left: 0px;
+  }
+}
+
+
+@media (max-width: 740px) {
+  .pillow-wrapper {
+    max-width: 600px;
+  }
+
+  .pillows h3 {
+    float: none;
+    text-align: center;
+    font-size: 36px;
+  }
+  
+  .pillow-1 {
+    top: 70px;
+    left: 40px;
+    width: 170px;
+  }
+
+  .pillow-2 {
+    top: 160px;
+    left: 30px;
+    width: 320px;
+  }
+
+  .pillow-3 {
+    top: 50px;
+    left: 170px;
+    width: 280px;
+  }
+
+  .pillow-4 {
+    top: 100px;
+    left: 400px;
+    width: 170px;
+  }
+
+  .pillow-5 {
+    top: 220px;
+    left: 300px;
+    width: 240px;
+  }
+
+  .films {
+    width: 90px;
+    height: 145px;
+  }
+
+  .pillows-img {
+    gap: 3px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pillow-wrapper {
+    max-width: 500px;
+    overflow: hidden;
+  }
+
+  
+  .pillow-1 {
+    top: 50px;
+    left: 75px;
+    width: 190px;
+  }
+
+  .pillow-2 {
+    top: -20px;
+    left: 200px;
+    width: 320px;
+  }
+
+  .pillow-3 {
+    top: 200px;
+    left: 30px;
+    width: 250px;
+  }
+
+  .pillow-4 {
+    top: 220px;
+    left: 250px;
+    width: 170px;
+  }
+
+  .pillow-5 {
+    top: 360px;
+    left: 140px;
+    width: 240px;
+  }
+
+  .films {
+    width: 60px;
+    height: 93px;
+  }
+  .pillows-img {
+    gap: 3px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 520px) {
+  .pillow-wrapper {
+    max-width: 300px;
+    overflow: hidden;
+  }
+
+  .pillow-1 {
+    top: 50px;
+    left: -15px;
+    width: 150px;
+  }
+
+  .pillow-2 {
+    top: 10px;
+    left: 100px;
+    width: 230px;
+  }
+
+  .pillow-3 {
+    top: 190px;
+    left: -40px;
+    width: 220px;
+  }
+
+  .pillow-4 {
+    top: 180px;
+    left: 130px;
+    width: 170px;
+  }
+
+  .pillow-5 {
+    top: 320px;
+    left: 20px;
+    width: 240px;
+  }
+
+  .films {
+    width: 60px;
+    height: 93px;
+  }
+  
+  .pillows h3 {
+    font-size: 24px;
+  }
+  .pillows-img {
+    gap: 3px;
+    padding-left: 0px;
+  }
+}

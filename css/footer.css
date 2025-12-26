@@ -1,0 +1,22 @@
+footer {
+  overflow-x: hidden;
+}
+
+.footer-ribbot {
+  animation: running-ribbot-footer 10s linear infinite;
+}
+
+@keyframes running-ribbot-footer {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(-43.35%);
+  }
+}
+
+@media (max-width: 740px) {
+  footer img {
+    height: 80px;
+  }
+}

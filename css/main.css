@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "AlumniSans-SemiBold";
+    src: url(../fonts/AlumniSans-SemiBold.ttf) format("truetype");
+    font-style: bold;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Roboto_Condensed-SemiBold";
+    src: url(../fonts/Roboto_Condensed-SemiBold.ttf) format("truetype");
+    font-style: bold;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "AlumniSans-Black";
+    src: url(../fonts/AlumniSans-Black.ttf) format("truetype");
+    font-style: black;
+    font-weight: 900;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    max-width: 100%;
+    background-color: #050505;
+}
+
+h2 {
+    font-family: 'AlumniSans-Black', sans-serif;
+    /* font-size: clamp(100px, 15vw, 248px); */
+    font-size: 248px;
+    color: #F0F0F0;
+}
+
+h3 {
+    /* font-size: clamp(18px, 15vw, 48px); */
+    color: #F0F0F0;
+    font-size: 48px;
+    font-family: 'AlumniSans-SemiBold', sans-serif;
+}
+
+button {
+    font-size: 16px;
+    color: #F0F0F0;
+    font-family: 'Roboto_Condensed-SemiBold';
+}
+
+running-ribbot {
+    height: 168px;
+}
+
