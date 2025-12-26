@@ -1,7 +1,7 @@
-@import url(../reset.css);
-@import url(../main.css);
-@import url(../welcome-section.css);
-@import url(../timer-section.css);
-@import url(../pillows-section.css);
-@import url(../watch-section.css);
-@import url(../footer.css);
+@import url(./reset.css);
+@import url(./main.css);
+@import url(./welcome-section.css);
+@import url(./timer-section.css);
+@import url(./pillows-section.css);
+@import url(./watch-section.css);
+@import url(./footer.css);
